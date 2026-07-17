@@ -20,7 +20,7 @@ for (let row = 0; row < 8; row++) {
 
         if (pieces[row][col] !== "") {
             const img = document.createElement("img");
-            img.src = "images/" + pieces[row][col];
+            img.src = pieces[row][col];
             img.classList.add("piece");
             img.alt = "";
             square.appendChild(img);
