@@ -35,7 +35,7 @@ if (pieces[row][col] !== "") {
         square.classList.add("selected");
         selectedSquare = square;
 
-    };
+    });
 }
         board.appendChild(square);
     }
