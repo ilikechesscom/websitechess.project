@@ -24,8 +24,5 @@ for (let row = 0; row < 8; row++) {
     img.classList.add("piece");
     square.appendChild(img);
 }
-        }
 
         board.appendChild(square);
-    }
-}
