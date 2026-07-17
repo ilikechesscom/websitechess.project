@@ -6,14 +6,13 @@ body {
 }
 
 #board {
-    width: min(95vw, 640px);
-    height: min(95vw, 640px);
+    width: min(95vw, 800px);
+    height: min(95vw, 800px);
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
 }
-
 .square {
     display: flex;
     justify-content: center;
