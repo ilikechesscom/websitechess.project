@@ -1,35 +1,17 @@
 const board = document.getElementById("board");
 
+for (let row = 0; row < 8; row++) {
+    for (let col = 0; col < 8; col++) {
+        const square = document.createElement("div");
 
-const pieces = [
-    "♜","♞","♝","♛","♚","♝","♞","♜",
-    "♟","♟","♟","♟","♟","♟","♟","♟",
-    "","","","","","","","",
-    "","","","","","","","",
-    "","","","","","","","",
-    "","","","","","","",
-    "♙","♙","♙","♙","♙","♙","♙","♙",
-    "♖","♘","♗","♕","♔","♗","♘","♖"
-];
+        square.classList.add("square");
 
+        if ((row + col) % 2 === 0) {
+            square.classList.add("white");
+        } else {
+            square.classList.add("black");
+        }
 
-for(let i = 0; i < 64; i++){
-
-    let square = document.createElement("div");
-
-    square.classList.add("square");
-
-
-    if((Math.floor(i/8)+i)%2==0){
-        square.classList.add("white");
+        board.appendChild(square);
     }
-    else{
-        square.classList.add("black");
-    }
-
-
-    square.innerHTML = pieces[i];
-
-
-    board.appendChild(square);
 }
