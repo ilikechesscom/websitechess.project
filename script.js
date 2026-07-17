@@ -1,3 +1,4 @@
+let selectedSquare = null;
 const board = document.getElementById("board");
 
 const pieces = [
@@ -24,7 +25,18 @@ for (let row = 0; row < 8; row++) {
     img.classList.add("piece");
     square.appendChild(img);
 }
+if (pieces[row][col] !== "") {
+    square.addEventListener("click", () => {
 
+        if (selectedSquare) {
+            selectedSquare.classList.remove("selected");
+        }
+
+        square.classList.add("selected");
+        selectedSquare = square;
+
+    });
+}
         board.appendChild(square);
     }
 }
