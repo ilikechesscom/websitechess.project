@@ -6,8 +6,8 @@ body {
 }
 
 #board {
-    width: min(95vw, 2000px);
-    height: min(95vw, 2000px);
+    width: min(95vw, 800px);
+    height: min(95vw, 800px);
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
