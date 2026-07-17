@@ -1,38 +1,27 @@
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
-
 
 #board {
-    width: 480px;
-    height: 480px;
-    margin: 30px auto;
-
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-
-    border: 3px solid black;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
 }
 
-
 .square {
-    width: 60px;
-    height: 60px;
-
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-size: 40px;
 }
-
 
 .white {
     background: #f0d9b5;
 }
-
 
 .black {
     background: #b58863;
