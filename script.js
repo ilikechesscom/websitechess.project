@@ -19,11 +19,11 @@ for (let row = 0; row < 8; row++) {
         square.classList.add((row + col) % 2 === 0 ? "white" : "black");
 
         if (pieces[row][col] !== "") {
-            const img = document.createElement("img");
-            img.src = pieces[row][col];
-            img.classList.add("piece");
-            img.alt = "";
-            square.appendChild(img);
+    const img = document.createElement("img");
+    img.src = pieces[row][col];
+    img.classList.add("piece");
+    square.appendChild(img);
+}
         }
 
         board.appendChild(square);
