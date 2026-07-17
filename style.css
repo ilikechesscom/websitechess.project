@@ -1,7 +1,8 @@
 body {
     display: flex;
-    margin-top: 30px;
-    margin-left: 50px;
+    justify-content: center;
+    margin: 0;
+    padding-top: 30px;
 }
 #board {
     width: min(95vw, 640px);
@@ -13,6 +14,9 @@ body {
 }
 
 .square {
+    width: 100%;
+    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
