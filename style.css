@@ -4,15 +4,15 @@ body {
     margin-left: 50px;
 }
 #board {
+    width: min(95vw, 640px);
+    height: min(95vw, 640px);
+
     display: grid;
-    grid-template-columns: repeat(8, min(12vw, 80px));
-    grid-template-rows: repeat(8, min(12vw, 80px));
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
 
 .square {
-    width: min(12vw, 80px);
-    height: min(12vw, 80px);
-
     display: flex;
     justify-content: center;
     align-items: center;
