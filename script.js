@@ -40,3 +40,35 @@ if (pieces[row][col] !== "") {
         board.appendChild(square);
     }
 }
+
+let selectedSquare = null;
+
+document.querySelectorAll(".square").forEach(square => {
+    square.addEventListener("click", () => {
+
+        const piece = square.querySelector("img");
+
+        // 기물 선택
+        if (piece) {
+            if (selectedSquare) {
+                selectedSquare.style.outline = "";
+            }
+
+            selectedSquare = square;
+            square.style.outline = "3px solid red";
+        }
+
+        // 이동
+        else if (selectedSquare) {
+            const selectedPiece = selectedSquare.querySelector("img");
+
+            if (selectedPiece) {
+                square.appendChild(selectedPiece);
+            }
+
+            selectedSquare.style.outline = "";
+            selectedSquare = null;
+        }
+
+    });
+});
