@@ -8,17 +8,26 @@ body {
     grid-template-columns: repeat(8, 80px);
     grid-template-rows: repeat(8, 80px);
 }
+
 .square {
     width: 80px;
     height: 80px;
-    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .white {
     background: #f0d9b5;
 }
+
 .black {
     background: #b58863;
+}
+
+.piece {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    pointer-events: none;
 }
