@@ -2,14 +2,13 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    margin-left: 50px;
 }
-
 #board {
     display: grid;
     grid-template-columns: repeat(8, 80px);
     grid-template-rows: repeat(8, 80px);
 }
-
 .square {
     width: 80px;
     height: 80px;
@@ -18,11 +17,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .white {
     background: #f0d9b5;
 }
-
 .black {
     background: #b58863;
 }
