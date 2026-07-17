@@ -5,13 +5,14 @@ body {
 }
 #board {
     display: grid;
-    grid-template-columns: repeat(8, 80px);
-    grid-template-rows: repeat(8, 80px);
+    grid-template-columns: repeat(8, min(12vw, 80px));
+    grid-template-rows: repeat(8, min(12vw, 80px));
 }
 
 .square {
-    width: 80px;
-    height: 80px;
+    width: min(12vw, 80px);
+    height: min(12vw, 80px);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,8 +27,7 @@ body {
 }
 
 .piece {
-    width: 70px;
-    height: 70px;
+    width: 85%;
+    height: 85%;
     object-fit: contain;
-    pointer-events: none;
 }
